@@ -1,0 +1,14 @@
+{
+  "dataset_path": "fundus_dataset_medical",
+  "categories": {
+    "normal": 51,
+    "diabetic_retinopathy": 106,
+    "glaucoma": 75,
+    "vascular_disorders": 81,
+    "macular_disorders": 137,
+    "retinal_detachment": 57,
+    "other_pathology": 490
+  },
+  "total_images": 997,
+  "num_classes": 7
+}%     

@@ -1,0 +1,15 @@
+🎯 What This Will Fix:
+
+Eliminate the garbage 1000images category
+Group related diseases into meaningful medical categories:
+
+normal (healthy eyes)
+diabetic_retinopathy (DR1, DR2, DR3)
+glaucoma (glaucoma + optic atrophy)
+vascular_disorders (BRVO, CRVO, hypertensive retinopathy)
+macular_disorders (maculopathy, ERM, macular holes)
+
+
+Balanced dataset with meaningful sample sizes per category
+
+in fundus_dataset_medical data set

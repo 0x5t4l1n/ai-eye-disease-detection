@@ -136,24 +136,32 @@ ai-eye-disease-detection/
    ```json
    {"status":"healthy","model_loaded":true}
    ```
+   ![image](https://github.com/user-attachments/assets/ffeef47a-95e3-4ef8-9dc8-1bffe53b7fcb)
+
 
 2. **Get Model Info**:
    ```bash
    curl http://localhost:5000/api/model-info
    ```
+
+   
    Expected:
    ```json
    {"success":true,"data":{"model_type":"GlaucomaSeverityModel","architecture":"ResNet101 with SE Blocks",...}}
    ```
+    ![image](https://github.com/user-attachments/assets/c4385ff4-cbaf-4ba3-8eca-2384984f931d)
 
 3. **Predict Glaucoma**:
    ```bash
    curl -F "image=@dataset/G1020/Images_Square/237.jpg" -F "return_probabilities=true" http://localhost:5000/api/predict
    ```
+   ![image](https://github.com/user-attachments/assets/87c86959-0202-4843-aa80-752445bed7fe)
+
    Expected:
    ```json
    {"success":true,"data":{"cdr":0.45,"severity":"Normal","severity_description":"No significant glaucoma signs","confidence":0.95,"risk_level":"Low","probabilities":{"Normal":0.95,"Mild":0.03,"Moderate":0.01,"Severe":0.01}},"filename":"237.jpg"}
    ```
+   ![image](https://github.com/user-attachments/assets/87c86959-0202-4843-aa80-752445bed7fe)
 
 ### Using the Frontend
 1. Open `http://localhost:8000` in a browser.

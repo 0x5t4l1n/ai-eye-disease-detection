@@ -1,45 +1,57 @@
-# ==========================
-# Eye Disease Detection - Full Requirements
-# ==========================
+# Core Deep Learning Framework
+tensorflow>=2.12.0,<2.16.0
+# Note: tensorflow-gpu is deprecated since TF 2.1+, GPU support is included in tensorflow
 
-# === Core ML/DL Libraries ===
-tensorflow==2.13.0
-keras==2.13.1
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+albumentations>=1.3.0
+Pillow>=9.5.0
 
-# === Computer Vision and Image Processing ===
-opencv-python==4.8.0.76
-Pillow==10.0.0
+# Scientific Computing and Data Manipulation
+numpy>=1.21.0,<2.0.0
+pandas>=1.5.0
+scipy>=1.9.0
 
-# === Data Science Libraries ===
-numpy==1.24.3
-pandas==2.0.3
-scikit-learn==1.3.0
-matplotlib==3.7.2
-seaborn==0.12.2
+# Machine Learning and Model Evaluation
+scikit-learn>=1.3.0
+imbalanced-learn>=0.11.0
 
-# === Dataset Download (Kaggle Datasets) ===
-kaggle==1.5.16
+# Data Visualization and Plotting
+matplotlib>=3.6.0
+seaborn>=0.12.0
 
-# === Utilities ===
-tqdm==4.66.1
-pathlib2==2.3.7
-python-multipart==0.0.6     # For image upload in FastAPI
-pydantic==1.10.9            # Required by FastAPI (v1)
+# Progress Bars and Utilities
+tqdm>=4.65.0
 
-# === Web Frameworks ===
-fastapi==0.103.2
-uvicorn==0.23.2
+# Kaggle API for Dataset Download
+kaggle>=1.5.16
 
-# === Interactive Development ===
-jupyterlab==4.0.5
-notebook==7.0.3
-ipykernel==6.25.1
+# Path Handling (built-in for Python 3.4+)
+# pathlib2>=2.3.7; python_version < "3.4"  # Not needed for Python 3.8+
 
-# === Optional: Flask (If needed for alt backend) ===
-flask==2.3.3
+# JSON handling (usually built-in, but for completeness)
+# json - built-in module
 
-tensorflow-addons
-imblearn
+# Additional Scientific Libraries
+# (These are typically installed with tensorflow/scikit-learn but listing for completeness)
+h5py>=3.7.0  # For model saving/loading
+protobuf>=3.20.0,<4.21.0  # TensorFlow compatibility
 
-# === Optional: GPU support (uncomment if using CUDA) ===
-#tensorflow-gpu==2.13.0
+# Optional: For better performance and additional features
+# Uncomment the following if needed:
+# tensorflow-addons>=0.20.0  # Additional TensorFlow operations
+# tensorboard>=2.12.0  # For training visualization
+# jupyter>=1.0.0  # For notebook development
+# ipywidgets>=8.0.0  # For interactive widgets in notebooks
+
+# Development and Testing (Optional)
+pytest>=7.0.0
+black>=23.0.0  # Code formatting
+flake8>=6.0.0  # Linting
+torchvision
+
+# System Requirements Notes:
+# - Python 3.8+ recommended
+# - CUDA 11.8+ and cuDNN 8.6+ for GPU acceleration
+# - Minimum 8GB RAM, 16GB+ recommended
+# - Minimum 10GB free disk space for dataset and models

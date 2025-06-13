@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaucoma Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Glaucoma Detection</h1>
+        
+        <!-- Single Image Prediction -->
+        <div class="section">
+            <h2>Single Image Prediction</h2>
+            <input type="file" id="singleImage" accept=".png,.jpg,.jpeg,.bmp,.tiff,.tif">
+            <label><input type="checkbox" id="singleProbabilities"> Show Probabilities</label>
+            <button onclick="predictSingle()">Predict</button>
+            <div id="singleResult"></div>
+        </div>
+        
+        <!-- Batch Image Prediction -->
+        <div class="section">
+            <h2>Batch Image Prediction</h2>
+            <input type="file" id="batchImages" accept=".png,.jpg,.jpeg,.bmp,.tiff,.tif" multiple>
+            <label><input type="checkbox" id="batchProbabilities"> Show Probabilities</label>
+            <button onclick="predictBatch()">Predict Batch</button>
+            <div id="batchResult"></div>
+        </div>
+        
+        <!-- Model Info -->
+        <div class="section">
+            <h2>Model Information</h2>
+            <button onclick="getModelInfo()">Get Model Info</button>
+            <div id="modelInfo"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

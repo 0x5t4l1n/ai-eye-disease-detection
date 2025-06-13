@@ -239,9 +239,13 @@ INFO:__main__:Starting frontend HTTP server on http://localhost:8000...
 1. Open `http://localhost:8000` in a browser.
 2. **Get Model Info**: Click “Get Model Info” to view model details.
 3. **Predict Glaucoma**:
-   - Upload an image (e.g., `237.jpg`).
+   - Upload an image (e.g., `016.jpg`).
    - Check “Show Probabilities” (optional).
    - Click “Predict” to view results.
+  
+    ![image](https://github.com/user-attachments/assets/b6ebdf21-54ca-4224-b890-2683d6ffc653)
+
+
 
 ## Training the Model
 1. **Prepare Dataset**:

@@ -1,4 +1,9 @@
+![image](https://github.com/user-attachments/assets/c26c02c6-614c-4672-974b-020df633032f)
+
+
 # AI Eye Disease Detection
+
+
 
 A web-based application for detecting glaucoma severity from retinal images using a ResNet101-based deep learning model with Squeeze-and-Excitation (SE) blocks. The app features a Flask backend for image processing and a frontend for user interaction. The pre-trained model is hosted on Hugging Face.
 
@@ -14,7 +19,7 @@ A web-based application for detecting glaucoma severity from retinal images usin
 - [Training the Model](#training-the-model)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Overview
 This application predicts glaucoma severity (Normal, Mild, Moderate, Severe) from retinal images by estimating the Cup-to-Disc Ratio (CDR) and providing confidence scores. The backend, served via Flask on port 5000, uses a pre-trained ResNet101 model. The frontend, served on port 8000, allows users to upload images and view results. The model is available at [Hugging Face](https://huggingface.co/5t4l1n/ai-eye-disease-detection/blob/main/model/best_glaucoma_model.pth), and the dataset includes images in `dataset/G1020/Images_Square/` (e.g., `237.jpg`).
@@ -326,5 +331,10 @@ INFO:__main__:Starting frontend HTTP server on http://localhost:8000...
 4. Push: `git push origin feature/your-feature`
 5. Open a pull request.
 
-## License
-MIT License. See [LICENSE](LICENSE).
+## Authors
+
+- [@Stalin-143](https://www.github.com/Stalin-143)
+
+
+
+

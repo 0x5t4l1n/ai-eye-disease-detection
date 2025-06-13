@@ -2,6 +2,7 @@
 
 
 # AI Eye Disease Detection
+[![Read on Medium](https://img.shields.io/badge/Read-Medium-black?logo=medium&style=for-the-badge)](https://medium.com/@stali.n/ai-eye-disease-detection-7bbe8ad13330)
 
 
 
@@ -336,6 +337,9 @@ INFO:__main__:Starting frontend HTTP server on http://localhost:8000...
 ## Authors
 
 - [@Stalin-143](https://www.github.com/Stalin-143)
+
+[![Read on Medium](https://img.shields.io/badge/Read-Medium-black?logo=medium&style=for-the-badge)](https://medium.com/@stali.n/ai-eye-disease-detection-7bbe8ad13330)
+
 
 
 

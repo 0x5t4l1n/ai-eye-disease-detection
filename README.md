@@ -102,6 +102,8 @@ ai-eye-disease-detection/
 │   │   ├── Images_Square/      # Retinal images (e.g., 237.jpg)
 │   ├── training.ipynb          # Jupyter notebook for training
 ├── server.py                   # Runs backend and frontend
+├── Dockerfile                  # Docker configuration
+├── .dockerignore               # Files to exclude from Docker build
 ├── venv/                       # Virtual environment
 ├── backup.ipynb                # Backup notebook
 ├── models/                     # Additional models (optional)

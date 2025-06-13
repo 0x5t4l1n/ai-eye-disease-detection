@@ -155,7 +155,7 @@ ai-eye-disease-detection/
    ```bash
    curl -F "image=@dataset/G1020/Images_Square/237.jpg" -F "return_probabilities=true" http://localhost:5000/api/predict
    ```
-   ![image](https://github.com/user-attachments/assets/87c86959-0202-4843-aa80-752445bed7fe)
+  
 
    Expected:
    ```json

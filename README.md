@@ -124,8 +124,80 @@ ai-eye-disease-detection/
    INFO:__main__:Both servers started successfully!
    ```
 
+   ![image](https://github.com/user-attachments/assets/e003b000-1eaa-4279-9894-f7e8d477f88a)
+
+
 2. **Stop Servers**:
    Press `Ctrl+C`.
+
+   
+
+### Build Docker Image
+
+#### Linux
+```bash
+docker build -t ai-eye-disease-detection .
+```
+
+#### Windows (Command Prompt or PowerShell)
+```bash
+docker build -t ai-eye-disease-detection .
+```
+
+#### Run Docker Container
+Mount the `dataset/` directory to access images.
+
+#### Linux
+```bash
+docker run -d \
+  -p 5000:5000 \
+  -p 8000:8000 \
+  -v $(pwd)/dataset:/app/dataset \
+  --name ai-eye-disease-container \
+  ai-eye-disease-detection
+```
+
+#### Windows (PowerShell)
+```powershell
+docker run -d `
+  -p 5000:5000 `
+  -p 8000:8000 `
+  -v ${PWD}/dataset:/app/dataset `
+  --name ai-eye-disease-container `
+  ai-eye-disease-detection
+```
+
+#### Windows (Command Prompt)
+```cmd
+docker run -d ^
+  -p 5000:5000 ^
+  -p 8000:8000 ^
+  -v %CD%\dataset:/app/dataset ^
+  --name ai-eye-disease-container ^
+  ai-eye-disease-detection
+```
+
+### Notes
+- `-v` mounts the local `dataset/` directory to `/app/dataset` in the container.
+- Use backticks (`) in PowerShell or carets (^) in Command Prompt for line continuation.
+- Ensure the `dataset/` directory exists locally.
+
+### Verify Container
+
+#### Linux/Windows
+```bash
+docker ps
+docker logs ai-eye-disease-container
+```
+
+#### Expected Logs
+```
+INFO:__main__:Starting Flask backend on http://localhost:5000...
+Backend: DEBUG:__main__:✅ Glaucoma predictor initialized successfully!
+INFO:__main__:Starting frontend HTTP server on http://localhost:8000...
+```
+![image](https://github.com/user-attachments/assets/ae26563e-969f-4d69-a8d4-613b54f2ea1f)
+
 
 ### Testing via API
 1. **Check Health**:
